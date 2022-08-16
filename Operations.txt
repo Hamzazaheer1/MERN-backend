@@ -1,0 +1,38 @@
+POST SignUp
+http://localhost:5000/api/users/signup
+{ 
+ "name": "Malik",
+ "email": "malik@gmail.com", 
+ "password": "123456"
+}
+POST Signin
+http://localhost:5000/api/users/login
+{ 
+    "email": "malik@gmail.com", 
+    "password": "123456"
+}
+Get All Users
+http://localhost:5000/api/users
+
+
+
+POST Place
+http://localhost:5000/api/places
+{
+    "title": "islamabad",
+    "description": "Building",
+    "address": "Pakistan",
+    "creator": "62fbf3d2b8cd3f0998e704d1"
+}
+GET Place by UserId
+http://localhost:5000/api/places/user/62fbf3d2b8cd3f0998e704d1
+GET Place by placeID
+http://localhost:5000/api/places/62fbf41fb8cd3f0998e704d3
+PATCH place
+http://localhost:5000/api/places/62fbf41fb8cd3f0998e704d3
+{
+    "title": "hamza",
+    "description": "backend"
+}
+DELETE place
+http://localhost:5000/api/places/62fbf41fb8cd3f0998e704d3
