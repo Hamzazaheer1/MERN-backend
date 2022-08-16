@@ -1,0 +1,30 @@
+npm init
+
+npm i --save express body-parser
+npm i --save--dev nodemon
+npm i --save uuid
+npm install --save express-validator
+
+
+//add in pakg.json
+"start": "nodemon app.js"
+
+
+STEPS To Build A REST API
+1 - App.js
+2 - Routes
+3 - Controller
+4 - Validators
+5 - UseExternalAPIs
+
+
+
+npm i --save mongoose
+npm i --save mongoose-unique-validator
+
+
+STEPS To connect database to backend
+1 - App.js db connect and server and fix controllers
+2 - create Schema & Model
+3 - fix controllers
+4 - build relations bw different models
